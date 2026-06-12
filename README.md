@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Weather Dashboard
 
 A modern weather application built with HTML, CSS, and JavaScript that provides real-time weather information and forecasts for cities around the world using the OpenWeather API.
@@ -93,18 +92,4 @@ https://openweathermap.org/api
 
 ### Forecast
 
-![Forecast](screenshots/forecast.png)
-=======
-# Weather Application 
-
-
-### Link
-
-https://superlative-pika-b1ebf1.netlify.app
-
-### Description
-
-This is a weather application interface. It allows the user to search for a city, and displays the current weather conditions for that city, along with hourly and weekly forecasts. It also displays the air conditions, including wind and humidity. The app is responsive and works well on different screen sizes.
-
-The code uses Bootstrap framework for styling and Axios library for making HTTP requests to retrieve weather data from OpenWeather API.
->>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
+# ![Forecast](screenshots/forecast.png)
