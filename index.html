@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="main">
+          <div class="main-wrapper">
+            <div id="search-form">
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Search"
+                list="cities"
+                autocomplete="off"
+              />
+
+              <datalist id="cities">
+                <option value="London"></option>
+                <option value="New York"></option>
+                <option value="Paris"></option>
+                <option value="Tokyo"></option>
+                <option value="Dubai"></option>
+                <option value="Amsterdam"></option>
+              </datalist>
+
+              <button id="current-location" type="button">
+                <svg
+                  height="30"
+                  viewBox="0 0 50 50"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M40,17  c0,13.604-15,31-15,31S10,30.928,10,17c0-8.285,6.715-15,15-15C33.284,2,40,8.715,40,17z"
+                    style="
+                      fill: none;
+                      stroke: #000;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-width: 4;
+                    "
+                  />
+                  <circle
+                    cx="25"
+                    cy="18"
+                    style="
+                      fill: none;
+                      r: 6;
+                      stroke: #000;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 10;
+                      stroke-width: 4;
+                    "
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div id="loading-spinner" style="display: none">
+              Loading weather...
+            </div>
+
+            <p id="error-message"></p>
+
+            <div class="row">
+              <div class="col">
+                <h1 id="city"></h1>
+                <p id="last-updated"></p>
+
+                <div class="weather-temperature">
+                  <span id="temperature"></span>
+                  <span id="units">°C</span>
+                </div>
+              </div>
+
+              <div class="col weather-condition">
+                <img src="" alt="weather icon" id="main-icon" />
+              </div>
+            </div>
+
+            <div class="weather-conditions-wrapper">
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">🌡️ Feels Like</div>
+                <div class="weather-conditions-body">
+                  <span id="feels-like"></span>°
+                </div>
+              </div>
+
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">💨 Wind</div>
+                <div class="weather-conditions-body">
+                  <span id="wind"></span> km/h
+                </div>
+              </div>
+
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">💧 Humidity</div>
+                <div class="weather-conditions-body">
+                  <span id="humidity"></span>%
+                </div>
+              </div>
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">📊 Pressure</div>
+                <div class="weather-conditions-body">
+                  <span id="pressure"></span> hPa
+                </div>
+              </div>
+
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">👀 Visibility</div>
+                <div class="weather-conditions-body">
+                  <span id="visibility"></span> km
+                </div>
+              </div>
+
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">🌅 Sunrise</div>
+                <div class="weather-conditions-body">
+                  <span id="sunrise"></span>
+                </div>
+              </div>
+
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">🌆 Sunset</div>
+                <div class="weather-conditions-body">
+                  <span id="sunset"></span>
+                </div>
+              </div>
+            </div>
+
+            <p class="main-subheading">Next 18 Hours</p>
+            <div class="hourly-forecast" id="hourly-forecast"></div>
+
+            <p class="main-subheading">5-Day Forecast</p>
+            <div class="daily-forecast" id="daily-forecast"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          Open-source code on
+          <a
+            href="https://github.com/Salmah1/Weather-application-api.git"
+            target="_blank"
+            >Github</a
+          >.
+        </p>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
