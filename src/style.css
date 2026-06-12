@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+=======
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +11,11 @@
 
 body {
   background: #f5f5f5;
+<<<<<<< HEAD
   font-family: "Poppins", sans-serif;
+=======
+  font-family: "Courier New", Courier, monospace;
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
   font-size: 12px;
   line-height: 16px;
   color: black;
@@ -22,6 +29,7 @@ body {
   display: flex;
 }
 
+<<<<<<< HEAD
 .main {
   width: 100%;
   max-width: 950px;
@@ -35,10 +43,37 @@ body {
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
+=======
+.leftSide {
+  max-height: 60px;
+  width: 65px;
+  padding: 5px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  background-color: #d98324;
+}
+
+.title {
+  font-size: 12px;
+  margin: 5px 0 0 0;
+}
+
+.main {
+  max-height: 840px;
+  width: 630px;
+  padding-top: 30px;
+  padding-bottom: 39px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0 10px 10px 10px;
+  background-color: #a40606;
+  background-image: linear-gradient(500deg, #d98324 0%, #a40606 74%);
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 }
 
 .main-wrapper {
   margin: 0 40px;
+<<<<<<< HEAD
   padding: 10px;
 }
 
@@ -51,10 +86,18 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+=======
+}
+
+#search-form {
+  width: 550px;
+  display: flex;
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 }
 
 #search-input {
   width: 100%;
+<<<<<<< HEAD
   height: 45px;
   font-size: 15px;
 
@@ -67,16 +110,42 @@ body {
 #search-input:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+=======
+  height: 30px;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0 0 0 24px;
+  font-size: 13px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+#search-btn {
+  margin-left: -35px;
+  background: none;
+  border: none;
+  transform: scale(1.5);
+  margin-top: 1px;
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 }
 
 #current-location {
   border: none;
   background: transparent;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+  width: 21px;
+  height: 21px;
+  transform: scale(2) translateX(15px) translateY(-2px);
+  cursor: pointer;
+  margin-top: 10px;
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 }
 
 h1 {
   margin-top: 25px;
+<<<<<<< HEAD
   margin-bottom: 0;
   font-size: 38px;
   font-weight: 600;
@@ -87,10 +156,21 @@ h1 {
   font-size: 84px;
   font-weight: 700;
   line-height: 1;
+=======
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.weather-temperature #temperature {
+  line-height: 1.5;
+  font-size: 35px;
+  margin-bottom: 0;
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 }
 
 .weather-temperature #units {
   position: relative;
+<<<<<<< HEAD
   font-size: 20px;
   top: -28px;
 }
@@ -107,6 +187,59 @@ h1 {
   font-weight: 600;
   margin-top: 35px;
   margin-bottom: 20px;
+=======
+  font-size: 16px;
+  top: -19px;
+}
+
+.weather-condition {
+  margin-top: 40px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+#description::first-letter {
+  text-transform: capitalize;
+}
+
+.main-subheading {
+  font-weight: 600;
+  font-size: 13px;
+  margin: 20px 0 10px 0;
+  text-decoration: underline;
+}
+
+.card {
+  display: flex;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 6px;
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  cursor: default;
+  transform: scale(1.1);
+}
+
+#icon {
+  width: 35px;
+  margin: 0 auto;
+}
+
+#temperature-min {
+  opacity: 0.7;
+}
+
+.subheading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 30px 0 15px 0;
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 }
 
 .weather-conditions-wrapper {
@@ -119,6 +252,7 @@ h1 {
 }
 
 .weather-conditions-card {
+<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -157,6 +291,15 @@ h1 {
 
 .forecast-card:hover {
   transform: translateY(-4px);
+=======
+  background: white;
+  border-radius: 10px;
+  padding: 9px 0 33px 0;
+  width: 120px;
+  height: 82px;
+  transition: all 150ms ease-in-out;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 }
 
 .weather-conditions-card:hover {
@@ -181,6 +324,7 @@ h1 {
 }
 
 a {
+<<<<<<< HEAD
   color: #7b3fe4;
   text-decoration: none;
   font-weight: 600;
@@ -226,3 +370,14 @@ a:hover {
     font-size: 56px;
   }
 }
+=======
+  text-decoration: none;
+  color: rgba(128, 0, 128, 0.677);
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgba(128, 0, 128, 0.677);
+  text-decoration: underline;
+}
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439

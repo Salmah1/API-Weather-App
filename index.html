@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <!doctype html>
+=======
+<!DOCTYPE html>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,6 +29,7 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
+<<<<<<< HEAD
         <div class="main">
           <div class="main-wrapper">
             <div id="search-form">
@@ -50,6 +55,63 @@
                   height="30"
                   viewBox="0 0 50 50"
                   width="30"
+=======
+        <div class="leftSide">
+          <h5 class="title">
+            <img
+              class="mb-2"
+              src="https://icon-library.com/images/google-weather-icon/google-weather-icon-8.jpg"
+              alt="weather icon"
+              width="20"
+            />WEATHER
+          </h5>
+        </div>
+
+        <div class="main">
+          <div class="main-wrapper">
+            <form id="search-form">
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Search for a city"
+              />
+              <button id="search-btn" type="submit">
+                <svg
+                  height="14"
+                  viewBox="0 10 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z"
+                    style="
+                      fill: none;
+                      stroke: #000;
+                      stroke-miterlimit: 10;
+                      stroke-width: 40;
+                    "
+                  />
+                  <line
+                    x1="338"
+                    x2="448"
+                    y1="338"
+                    y2="448"
+                    style="
+                      fill: none;
+                      stroke: #000;
+                      stroke-linecap: round;
+                      stroke-miterlimit: 10;
+                      stroke-width: 40;
+                    "
+                  />
+                </svg>
+              </button>
+
+              <button id="current-location">
+                <svg
+                  height="11"
+                  viewBox="0 0 50 50"
+                  width="15"
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -76,6 +138,7 @@
                   />
                 </svg>
               </button>
+<<<<<<< HEAD
             </div>
 
             <div id="loading-spinner" style="display: none">
@@ -83,25 +146,41 @@
             </div>
 
             <p id="error-message"></p>
+=======
+            </form>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
 
             <div class="row">
               <div class="col">
                 <h1 id="city"></h1>
+<<<<<<< HEAD
                 <p id="last-updated"></p>
 
                 <div class="weather-temperature">
                   <span id="temperature"></span>
                   <span id="units">°C</span>
+=======
+                <p id="date"></p>
+
+                <div class="weather-temperature">
+                  <span id="temperature"></span>
+                  <span id="units">ºC</span>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
                 </div>
               </div>
 
               <div class="col weather-condition">
+<<<<<<< HEAD
+=======
+                <p id="description" class="mb-0"></p>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
                 <img src="" alt="weather icon" id="main-icon" />
               </div>
             </div>
 
             <div class="weather-conditions-wrapper">
               <div class="weather-conditions-card">
+<<<<<<< HEAD
                 <div class="weather-conditions-heading">🌡️ Feels Like</div>
                 <div class="weather-conditions-body">
                   <span id="feels-like"></span>°
@@ -110,18 +189,27 @@
 
               <div class="weather-conditions-card">
                 <div class="weather-conditions-heading">💨 Wind</div>
+=======
+                <div class="weather-conditions-heading">Wind</div>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
                 <div class="weather-conditions-body">
                   <span id="wind"></span> km/h
                 </div>
               </div>
+<<<<<<< HEAD
 
               <div class="weather-conditions-card">
                 <div class="weather-conditions-heading">💧 Humidity</div>
+=======
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">Humidity</div>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
                 <div class="weather-conditions-body">
                   <span id="humidity"></span>%
                 </div>
               </div>
               <div class="weather-conditions-card">
+<<<<<<< HEAD
                 <div class="weather-conditions-heading">📊 Pressure</div>
                 <div class="weather-conditions-body">
                   <span id="pressure"></span> hPa
@@ -130,10 +218,20 @@
 
               <div class="weather-conditions-card">
                 <div class="weather-conditions-heading">👀 Visibility</div>
+=======
+                <div class="weather-conditions-heading">Pressure</div>
+                <div class="weather-conditions-body">
+                  <span id="pressure"></span>
+                </div>
+              </div>
+              <div class="weather-conditions-card">
+                <div class="weather-conditions-heading">Visibility</div>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
                 <div class="weather-conditions-body">
                   <span id="visibility"></span> km
                 </div>
               </div>
+<<<<<<< HEAD
 
               <div class="weather-conditions-card">
                 <div class="weather-conditions-heading">🌅 Sunrise</div>
@@ -154,6 +252,14 @@
             <div class="hourly-forecast" id="hourly-forecast"></div>
 
             <p class="main-subheading">5-Day Forecast</p>
+=======
+            </div>
+
+            <p class="main-subheading">Today's Forecast</p>
+            <div class="hourly-forecast" id="hourly-forecast"></div>
+
+            <p class="main-subheading">Week's Forecast</p>
+>>>>>>> 6bf91efa12cc0146ea6f2ff53f4143654fda4439
             <div class="daily-forecast" id="daily-forecast"></div>
           </div>
         </div>
